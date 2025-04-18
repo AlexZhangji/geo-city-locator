@@ -2,7 +2,7 @@
 
 Find the nearest city to any geographic coordinates or extract location from photos with GPS metadata.
 
-GeoCityLocator is designed for **offline use** after initial setup. It downloads a comprehensive world cities database only once, then works completely offline with lightning-fast lookups for both coordinates and photos.
+GeoCityLocator is designed for **offline use** after initial setup. It downloads a small flat file of world cities  once, then works completely offline with lightning-fast lookups for both coordinates and photos.
 
 ## Key Benefits
 
