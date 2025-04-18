@@ -1,0 +1,10 @@
+requests>=2.25.0
+pillow>=8.0.0
+pandas>=1.0.0
+numpy>=1.18.0
+appdirs>=1.4.4
+
+# Web应用依赖（可选）
+streamlit>=1.0.0
+folium>=0.12.0
+streamlit-folium>=0.6.0 
