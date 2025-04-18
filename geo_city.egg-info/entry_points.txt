@@ -1,2 +1,0 @@
-[console_scripts]
-geocity = geo_city.nearest_city:main

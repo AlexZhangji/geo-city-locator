@@ -1,12 +1,12 @@
-# GeoCity
+# GeoCityLocator
 
 Find the nearest city to any geographic coordinates or extract location from photos with GPS metadata.
 
-GeoCity is designed for **offline use** after initial setup. It downloads a comprehensive world cities database only once, then works completely offline with lightning-fast lookups for both coordinates and photos.
+GeoCityLocator is designed for **offline use** after initial setup. It downloads a comprehensive world cities database only once, then works completely offline with lightning-fast lookups for both coordinates and photos.
 
 ## Key Benefits
 
-- **Work Anywhere**: Whether you're in a remote area or on a flight with no internet, GeoCity keeps working
+- **Work Anywhere**: Whether you're in a remote area or on a flight with no internet, GeoCityLocator keeps working
 - **Fast Performance**: Optimized for speed with lookups in milliseconds, even on large datasets
 - **Privacy-Focused**: Your location data stays on your device - no external API calls needed
 - **Versatile Input**: Works with raw coordinates or extracts GPS data directly from photos
@@ -28,25 +28,25 @@ GeoCity is designed for **offline use** after initial setup. It downloads a comp
 ### Standard Installation
 
 ```bash
-pip install geo-city
+pip install geo-city-locator
 ```
 
 ### With Web Interface
 
 ```bash
-pip install "geo-city[web]"
+pip install "geo-city-locator[web]"
 ```
 
 ### Development Installation 
 
 ```bash
-pip install "geo-city[dev]"
+pip install "geo-city-locator[dev]"
 ```
 
 ### Using uv (for faster dependency resolution)
 
 ```bash
-uv pip install geo-city
+uv pip install geo-city-locator
 ```
 
 ## Usage Examples
@@ -54,7 +54,7 @@ uv pip install geo-city
 ### Basic Example
 
 ```python
-from geo_city import get_nearest_city
+from geo_city_locator import get_nearest_city
 
 # Find the nearest city to coordinates
 city = get_nearest_city(40.7128, -74.0060)
@@ -65,7 +65,7 @@ print(f"You are near {city.name}, {city.country}")
 ### Offline Usage
 
 ```python
-from geo_city import NearestCityFinder
+from geo_city_locator import NearestCityFinder
 
 # Create a finder instance that loads the database once
 finder = NearestCityFinder()
@@ -82,7 +82,7 @@ print(f"Cities found: {nyc.name}, {paris.name}, {tokyo.name}")
 ### Finding a city with custom population threshold
 
 ```python
-from geo_city import NearestCityFinder
+from geo_city_locator import NearestCityFinder
 
 # Create a finder that only considers cities with 50,000+ population
 finder = NearestCityFinder(min_population=50000)
@@ -94,7 +94,7 @@ print(city)
 ### Extract location from a photo
 
 ```python
-from geo_city import get_city_from_photo
+from geo_city_locator import get_city_from_photo
 
 # Find the location where a photo was taken
 city = get_city_from_photo("vacation.jpg")
@@ -107,13 +107,13 @@ if city:
 
 ```bash
 # Find nearest city to coordinates
-geocity 40.7128 -74.0060
+geocitylocator 40.7128 -74.0060
 
 # Find nearest city to photo location
-geocity --photo vacation.jpg
+geocitylocator --photo vacation.jpg
 
 # Run built-in tests
-geocity --test
+geocitylocator --test
 ```
 
 ### Web Interface
@@ -126,7 +126,7 @@ streamlit run app.py
 
 ## Documentation
 
-For detailed documentation, visit [https://geocity.readthedocs.io/](https://geocity.readthedocs.io/)
+For detailed documentation, visit [https://geocitylocator.readthedocs.io/](https://geocitylocator.readthedocs.io/)
 
 ## Requirements
 

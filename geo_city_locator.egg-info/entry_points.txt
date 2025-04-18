@@ -1,0 +1,2 @@
+[console_scripts]
+geocitylocator = geo_city_locator.nearest_city:main

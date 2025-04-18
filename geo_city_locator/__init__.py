@@ -1,5 +1,5 @@
 """
-GeoCity - Find the nearest city to any latitude/longitude coordinates or photos with GPS data.
+GeoCityLocator - Find the nearest city to any latitude/longitude coordinates or photos with GPS data.
 """
 
 from .nearest_city import (

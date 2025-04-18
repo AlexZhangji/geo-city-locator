@@ -5,17 +5,17 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="geo-city",
+    name="geo-city-locator",
     version="0.1.0",
-    author="GeoCity Team",
-    author_email="example@geocity.org",
+    author="GeoCityLocator Team",
+    author_email="example@geocitylocator.org",
     description="Find the nearest city to any geographic coordinates or from photo metadata",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/geo-city",
+    url="https://github.com/yourusername/geo-city-locator",
     project_urls={
-        "Bug Tracker": "https://github.com/yourusername/geo-city/issues",
-        "Documentation": "https://geocity.readthedocs.io/",
+        "Bug Tracker": "https://github.com/yourusername/geo-city-locator/issues",
+        "Documentation": "https://geocitylocator.readthedocs.io/",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -53,7 +53,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "geocity=geo_city.nearest_city:main",
+            "geocitylocator=geo_city_locator.nearest_city:main",
         ],
     },
 ) 

@@ -3,12 +3,12 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "geo-city"
+name = "geo-city-locator"
 version = "0.1.0"
 description = "Find the nearest city to any geographic coordinates or from photo metadata"
 readme = "README.md"
 authors = [
-    {name = "GeoCity Team", email = "example@geocity.org"}
+    {name = "GeoCityLocator Team", email = "example@geocitylocator.org"}
 ]
 license = {text = "MIT"}
 classifiers = [
@@ -33,10 +33,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/geo-city"
-Documentation = "https://geocity.readthedocs.io/"
-Repository = "https://github.com/yourusername/geo-city.git"
-"Bug Tracker" = "https://github.com/yourusername/geo-city/issues"
+Homepage = "https://github.com/yourusername/geo-city-locator"
+Documentation = "https://geocitylocator.readthedocs.io/"
+Repository = "https://github.com/yourusername/geo-city-locator.git"
+"Bug Tracker" = "https://github.com/yourusername/geo-city-locator/issues"
 
 [project.optional-dependencies]
 web = [
@@ -53,7 +53,7 @@ dev = [
 ]
 
 [project.scripts]
-geocity = "geo_city.nearest_city:main"
+geocitylocator = "geo_city_locator.nearest_city:main"
 
 [tool.black]
 line-length = 88

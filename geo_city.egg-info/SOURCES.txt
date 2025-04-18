@@ -1,9 +1,0 @@
-MANIFEST.in
-README.md
-UV_SUPPORT.md
-pyproject.toml
-requirements.txt
-setup.py
-geo_city/__init__.py
-geo_city/nearest_city.py
-geo_city/photo_utils.py

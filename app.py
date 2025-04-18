@@ -19,11 +19,11 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Import from geo_city package
-from geo_city import get_nearest_city, NearestCityFinder, haversine, get_photo_info
+# Import from geo_city_locator package
+from geo_city_locator import get_nearest_city, NearestCityFinder, haversine, get_photo_info
 
 st.set_page_config(
-    page_title="GeoCity - Find the nearest city",
+    page_title="GeoCityLocator - Find the nearest city",
     page_icon="🌎",
     layout="wide",
 )
@@ -62,10 +62,10 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("<h1 class='main-header'>GeoCity Explorer 🌎</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-header'>GeoCityLocator Explorer 🌎</h1>", unsafe_allow_html=True)
 st.markdown("""
 Find the nearest cities to any geographic coordinates or extract location from photos.
-This app demonstrates the functionality of the `geo-city` library.
+This app demonstrates the functionality of the `geo-city-locator` library.
 """)
 
 # Initialize the city finder
@@ -282,7 +282,7 @@ with tab2:
 st.markdown("---")
 st.markdown("""
 <div style="text-align: center; color: #666;">
-    <p>Powered by the <code>geo-city</code> library | Map data © OpenStreetMap contributors</p>
+    <p>Powered by the <code>geo-city-locator</code> library | Map data © OpenStreetMap contributors</p>
     <p>City database from <a href="https://simplemaps.com/data/world-cities" target="_blank">SimpleMaps</a></p>
 </div>
 """, unsafe_allow_html=True) 
